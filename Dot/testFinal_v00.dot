@@ -1,0 +1,40 @@
+digraph testFinal {
+	node [
+		fontname  = "Arial bold" 
+		fontsize  = "14"
+		fontcolor = "red"
+		style     = "rounded, filled"
+		shape     = "record"
+		fillcolor = "grey90"
+		color     = "blue"
+		width     = "2"
+	]
+
+	edge [
+		color     = "blue"
+	]
+
+19 [label = "{<c> 19 | { <g> | <d>}}"];
+19:g -> 12;
+12 [label = "{<c> 12 | { <g> | <d>}}"];
+12 [label = "{<c> 12 | { <g> NULL | <d>}}"];
+12:d -> 16;
+16 [label = "{<c> 16 | { <g> | <d>}}"];
+16:g -> 14;
+14 [label = "{<c> 14 | { <g> | <d>}}"];
+14 [label = "{<c> 14 | { <g> NULL | <d> NULL}}"];
+16:d -> 18;
+18 [label = "{<c> 18 | { <g> | <d>}}"];
+18 [label = "{<c> 18 | { <g> NULL | <d> NULL}}"];
+19:d -> 34;
+34 [label = "{<c> 34 | { <g> | <d>}}"];
+34 [label = "{<c> 34 | { <g> | <d> NULL}}"];
+34:g -> 24;
+24 [label = "{<c> 24 | { <g> | <d>}}"];
+24:g -> 21;
+21 [label = "{<c> 21 | { <g> | <d>}}"];
+21 [label = "{<c> 21 | { <g> NULL | <d> NULL}}"];
+24:d -> 30;
+30 [label = "{<c> 30 | { <g> | <d>}}"];
+30 [label = "{<c> 30 | { <g> NULL | <d> NULL}}"];
+}
